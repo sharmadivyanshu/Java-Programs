@@ -53,6 +53,7 @@ public class AbstractMain
                 System.out.println("Wrong choice again sucker!!!");
                 System.out.println("Exiting...");
             }
-        }               
+        }       
+        obj.inAbstract();
     }   
 }

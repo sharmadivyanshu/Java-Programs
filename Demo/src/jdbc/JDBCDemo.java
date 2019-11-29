@@ -10,15 +10,15 @@ public class JDBCDemo
            Class.forName("oracle.jdbc.driver.OracleDriver"); 
            Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","c##Sharma","Password");
            Statement st=con.createStatement();
-           boolean b=st.execute("create table demo_table (Name varchar2(20), Age integer, Sex varchar2(10)");
+           boolean b=st.execute("create table demo_table (Name varchar2(20), Age integer, Sex varchar2(10))");
            if(!b)
            {
                String insert="insert into demo_table values('Divyanshu',24,'Male')";
                int i=st.executeUpdate(insert);
                if(i>0)
-                   System.out.print("inserted");
+                   System.out.println("Inserted");
                else
-                   System.out.print("not inserted");
+                   System.out.println("not inserted");
            }
 
            String select="select * from demo_table";
@@ -35,7 +35,7 @@ public class JDBCDemo
         }
         catch(ClassNotFoundException | SQLException e)
         {
-
+            System.out.println(e);
         }   
     }    
 }

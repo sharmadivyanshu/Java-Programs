@@ -5,6 +5,7 @@ public class PerfectNumber
     public static void main(String ar[])
     {
         Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Number:");
         int n=sc.nextInt();
         boolean b = isPerfect(n);
         if(b)

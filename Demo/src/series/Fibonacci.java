@@ -5,11 +5,13 @@ public class Fibonacci
     public static void main(String ar[])
     {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any no: ");
 	int n = sc.nextInt();
-	int k=0,a=1,b=1;
+	int k=0,a=0,b=1;
         int i=1;
-        System.out.print("1 1 ");
-	while(i<=n-2)
+        System.out.println("Fibonacci Series:");
+        System.out.print(a+" "+b+" ");
+	while(i<n)
         {
             k=a+b;
             System.out.print(k+" ");
@@ -17,5 +19,6 @@ public class Fibonacci
             b=k;
             i++;
         }
+        System.out.println();
     }   
 }

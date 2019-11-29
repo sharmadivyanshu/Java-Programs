@@ -1,0 +1,9 @@
+Annotation.MobilePhone
+Annotation.AnnotationDemo
+Annotation.Nokia
+Annotation.Phone
+Annotation.Samsung
+Annotation.B
+Annotation.SmartPhone
+Annotation.Apple
+Annotation.A

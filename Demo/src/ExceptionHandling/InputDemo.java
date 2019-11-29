@@ -7,7 +7,7 @@ public class InputDemo
 {
     public  static void main(String ar[]) throws Exception
     {
-        try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in));)
+        try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in));)        //try with resources
         {
             String str= "";            
             str = br.readLine();

@@ -33,7 +33,8 @@ class Y
 
 class XY extends Y
 {
-     public void display()
+     @Override
+     public void display()      //method overriding
     {
         super.display();
         System.out.println("Hello from XY");
